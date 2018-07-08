@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div>
         <textarea className="form-control form1" ref={(input) => { this.trackInput = input }} />
-        <button className="btn btn-light btn1" onClick={this.addTrack.bind(this)}>Add track</button>
+        <button className="btn btn-light btn1" onClick={this.addTrack.bind(this)}>Add</button>
         <ul>
           {this.props.testStore.map((track, index) =>
             <li className="alert alert-info" key={index}>{track}</li>
