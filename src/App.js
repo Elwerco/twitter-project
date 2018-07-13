@@ -9,10 +9,13 @@ state = {
   }
 
   componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`)
+    axios.get(`https://twitter-project-e5c77.firebaseio.com/0.json`)
       .then(res => {
-        const persons = res.data;
-        this.setState({ persons });
+        // const persons = res.data;
+        // this.setState({ persons });
+        let persons = this.state.persons.slice()
+		persons.push(res.data)    
+		this.setState({persons})
         localStorage.setItem('myKey', JSON.stringify(persons));
       })
   }
