@@ -1,5 +1,6 @@
-import React, {Component} from "react";
-import { Route, Redirect } from 'react-router';
+import React from "react";
+import { Redirect } from 'react-router';
+import {fire} from "./Fire";
 
 class Nav extends React.Component{
 	constructor(props) {
@@ -9,6 +10,7 @@ class Nav extends React.Component{
   }
 
 	click(){
+		fire.auth().signOut();
 		this.setState({isRedirect: true});
 		}
 

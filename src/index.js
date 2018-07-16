@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import {Router, Route, Link} from 'react-router-dom';
+import {Router, Route} from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import Auth from "./components/Auth";
-import Add from "./components/Add";
-import Nav from "./components/Nav";
+import Add from "./components/Add"
 import Sign from "./components/Sign";
-
-import App from './App';
 import './index.css';
 
 const initialState = {
@@ -37,7 +34,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
         <div>
-          <Nav />
+          {/*<Nav />*/}
           {/*<App />*/}
           <Route exact path="/" component={Add}/>
           <Route path="/login" component={Auth}/>

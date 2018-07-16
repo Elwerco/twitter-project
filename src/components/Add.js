@@ -40,6 +40,7 @@ state = {
 	render() {
 		return(
 			<div>
+            <Nav />
 	      	  <div className="container">
 		        <textarea className="form-control form1" ref={(input) => { this.trackInput = input }} />
 		        <button className="btn btn-light btn1" onClick={this.addTrack.bind(this)}>Add</button>
