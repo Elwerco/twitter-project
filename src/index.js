@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 import {Router, Route} from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory';
+import createBrowserHistory from 'history/createBrowserHistory';
 import Auth from "./components/Auth";
 import Add from "./components/Add"
 import Sign from "./components/Sign";
@@ -28,7 +28,7 @@ function playlist(state = initialState.data, action) {
 }
 
 const store = createStore(playlist);
-const history = createHistory(); 
+const history = createBrowserHistory(); 
 
 ReactDOM.render(
   <Provider store={store}>
