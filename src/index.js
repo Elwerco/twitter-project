@@ -10,6 +10,8 @@ import Add from "./components/Add"
 import Sign from "./components/Sign";
 import './index.css';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 const initialState = {
 	data: []
 };
