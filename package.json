@@ -9,6 +9,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "firebase": "^5.2.0",
+<<<<<<< HEAD
     "jquery": "^3.3.1",
     "react": "^15.3.2",
     "react-bootstrap": "^0.32.1",
@@ -16,10 +17,19 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0"
+=======
+    "history": "^4.7.2",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.4.0-alpha.1",
+    "reactstrap": "^6.3.0"
+>>>>>>> aee431002e432a839bce33728c887c6a3a63809e
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start --mode production",
+    "build": "react-scripts build --mode production",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
